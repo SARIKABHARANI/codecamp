@@ -125,3 +125,61 @@ nav .login{
     color: white;
     margin-top: -4vw;
     font-weight: lighter;
+.notif-head{
+  padding-top: 4vw;
+ display: flex;
+  justify-content: center;
+}
+    
+.notif-head h1{
+   font-size: 3vw;
+   font-weight: bold;
+   color: white;
+}
+    
+.notifs{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+    
+.no-notifs{
+color: #FFD524;
+}
+    
+.notif-card{
+    width: 25vw;
+    height: 5vw;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+}
+    
+.notif-card .left{
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+}
+    
+.notif-card .pfp{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.notif-card .username{
+    padding-left: 0.5vw;
+}
+    
+.notif-card .right{
+padding-right: 2vw;
+}
+.liked-img{
+    
+}

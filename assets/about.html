@@ -34,6 +34,35 @@
         </div>
         <div class="illus">
 
+            <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="postModalLabel">Add Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="/posts/newpost" method="post">
+                        <div class="custom-file">
+                            <input type="file" accept="image/*" class="custom-file-input" id="file">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <br><br>
+                        <button type="button" class="btn post-btn" id="uploadBtn" onclick=uploadFile()>Upload</button>
+                        <br><br>
+                        <p id="loading" style="padding: 1vw 0vw;">Please wait while your file is uploading...</p>
+                        <input type="text" name="fileUrl" id="fileUrl" value="" hidden>
+                        <div class="form-group">
+                            <input type="text" name="caption" placeholder="Caption..." class="form-control" autocomplete="off">
+                        </div>
+                        <button type="submit" class="btn post-btn" id="postBtn" disabled>Post!</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+         </div>
         </div>
     </div>
 </body>
